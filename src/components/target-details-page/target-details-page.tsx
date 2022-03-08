@@ -12,7 +12,7 @@ type TargetId = {
   id: string;
 }
 
-const DonationTargetDetails = (): JSX.Element => {
+const TargetDetailsPage = (): JSX.Element => {
   const {id} = useParams<TargetId>();
   const [targetDetails, setTargetDetails] = useState({
     id: '',
@@ -85,4 +85,4 @@ const DonationTargetDetails = (): JSX.Element => {
   )
 }
 
-export default DonationTargetDetails;
+export default TargetDetailsPage;
