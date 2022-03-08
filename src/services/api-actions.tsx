@@ -22,4 +22,23 @@ export const fetchTargetList = (handleTargetList: (props: Target[]) => void, han
     .catch(handleIsServerError);
 }
 
-
+export const fetchTargetDetails = (
+  targetId: string | undefined,
+  handleTargetDetails: (props: Target) => void,
+  handleIsNoData: () => void,
+  handleServerError: () => void) => {
+    axios({
+      method: 'get',
+      url: `${BACKEND_URL}/${targetId}`,
+      timeout: REQUEST_TIMEOUT,
+    })
+      .then((response) => {
+        if (response.data.giftTargets.length === 0) {
+          handleIsNoData();
+        } else {
+          const data = response.data.giftTargets[0];
+          handleTargetDetails(data);
+        }
+      })
+      .catch(handleServerError);
+}
