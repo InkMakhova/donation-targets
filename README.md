@@ -1,6 +1,6 @@
 # Donation targets
 
-<a href="#">Demo</a>
+<a href="https://donation-targets.vercel.app/">Demo</a>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Ant Design](https://ant.design/)
 
