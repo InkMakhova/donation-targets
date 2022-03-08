@@ -1,5 +1,5 @@
 export enum AppRoute {
   Root = '/',
-  Target = '/target',
+  Targets = '/targets',
   Page404 = '/page-not-found',
 }
