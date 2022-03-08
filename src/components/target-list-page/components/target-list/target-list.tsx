@@ -1,6 +1,6 @@
-import { Target } from '../../types/target';
+import { Target } from '../../../../types/target';
 import { Link } from 'react-router-dom';
-import { AppRoute } from '../../const';
+import { AppRoute } from '../../../../const';
 import { Table } from 'antd';
 
 type TargetListProps = {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchTargetList } from '../../services/api-actions';
-import TargetList from '../target-list/target-list';
+import TargetList from './components/target-list/target-list';
 import { Target } from '../../types/target';
 import { HomeOutlined } from '@ant-design/icons';
 
