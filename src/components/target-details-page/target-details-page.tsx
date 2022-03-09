@@ -78,9 +78,8 @@ const TargetDetailsPage = (): JSX.Element => {
       <Link
         to={AppRoute.Root}
         style={{fontSize: '1.1em'}}
-      >
-        Back home
-      </Link>
+        data-testid='back-home'
+      >Back home</Link>
     </div>
   )
 }
